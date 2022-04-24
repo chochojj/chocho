@@ -1,0 +1,1178 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Nanum+Gothic&family=Sarabun:wght@100&family=Satisfy&display=swap');
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    color: black;
+}
+body {
+    background-color: oldlace;
+}
+a { 
+    text-decoration: none;
+}
+
+/**헤더***/
+
+.wrap {
+    width: 100%;
+    margin:  0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+header {
+    width: 100%;
+    height: 320px;
+   
+}
+.navi {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 100;
+    background-color: oldlace;
+}
+.menu {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    top: 12px;
+}
+.menu a {
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    font-family: 'Sarabun', sans-serif;
+}
+.menu a:hover {
+    font-weight: bold;
+}
+
+/**로그인하고 보이기**/
+.menu a:nth-child(1) {
+    margin-left: 75%;
+}
+.menu a:nth-child(2) {
+    margin-left: 80%;
+    
+}
+.menu a:nth-child(3) {
+    margin-left: 67%;
+    visibility: hidden;
+}
+.logo {
+    width: 100%;
+    position:relative;
+    text-align: center;
+    top: 90px;
+     
+}
+
+.logo pre:nth-of-type(1) {
+    top: 150px;
+    font-size: 2.5vw;
+    font-weight: 300;
+    font-family: 'Beau Rivage', cursive;
+}
+.logo pre:nth-of-type(2) {
+    margin-top: 25px;
+    font-size: 1.3vw;
+    font-family: 'Beau Rivage', cursive;
+}
+header hr:nth-of-type(1) {
+    width: 75%;
+    position: relative;
+    top: 137px;
+    
+}
+header hr:nth-of-type(2) {
+    width: 75%;
+    position: relative;
+    top: 148px;
+    
+}
+
+
+.undermenu {
+    width: 100%;
+    height: 40px;
+    margin-left: 15%;
+    line-height: 40px;
+    position: relative;
+    top: 140px;
+    font-weight: bold;
+}
+
+.undermenu a {
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.undermenu a:hover {
+    color: #A52A2A;
+}
+
+.undermenu a:first-child {
+    margin-left: 4.5%;
+}
+.undermenu a:nth-child(2) {
+    margin-left: 23%;
+}
+.undermenu a:nth-child(3) {
+    margin-left: 42%;
+}
+.undermenu a:nth-child(4) {
+    margin-left: 60%;
+}
+
+
+
+/**메인소개**/
+
+.content {
+    width: 90%;
+    margin-left: 5%;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.txt {
+    width: 30%;
+    height: 350px;
+    margin-left: 10%;
+    position: relative;
+    float: left;
+    margin-top: 130px;
+    text-shadow: 1px 1px 5px #d7a35d;
+    
+}
+
+
+.title {
+    position: relative;
+    font-size: 2.2vw;
+    text-align: center;
+    font-family: 'Sarabun', sans-serif;
+    
+}
+
+.sub {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.sub p{
+    font-size: 1.2vw;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: 'GmarketSansLight';
+    text-align: center;
+}
+
+.sub span{
+    font-size: 1vw;
+    margin-top: 13px;
+    font-family: 'GmarketSansLight';
+    font-weight: 500;
+    text-align: center;
+}
+
+.content .more{
+    margin: 20px 0 0;
+    width: 100%;
+    height: 48px;
+    border-radius: 3px;
+    font-size: 1vw;
+    color: #fff;
+    background-color: burlywood;
+    font-family: 'GmarketSansLight';
+}
+.content .more:hover {
+    cursor: pointer;
+}
+.content img {
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 3%;
+    box-shadow: 5px 5px 30px #d7a35d;
+        }
+
+/**푸터**/
+hr {
+    width: 90%;
+}
+
+footer {
+    z-index: 10;
+    left: 1%;
+    width: 90%;
+    height: 250px;
+    position: relative;
+    margin-top: 50px;
+    font-family: 'GmarketSansLight';
+    
+}
+
+footer a {
+    font-weight: bold;
+}
+
+
+.foot {
+    text-align: center;
+    width: 80%;
+   top: 50px;
+     position: absolute; top: 50%; transform: translateY(-50%);
+    left: 40px;
+}
+.foot img {
+    width: 200px;
+    height: 200px;
+ margin-left: 15%;
+    float: left;
+}
+.copyright {
+    margin-top: 50px;
+    margin-left: 15%;
+}
+
+/**로그인**/
+
+.login {
+    width: 30%;
+    height: 300px;
+    margin-left: 10%;
+    position: relative;
+    float: left;
+    margin-top: 170px;
+    text-align: center;
+    
+}
+fieldset legend{
+    font-size: 1.2vw;
+    font-family: 'GmarketSansLight';
+    margin-bottom: 15px;
+    
+}
+button, input, select, td, textarea, th {
+    font-size: 1vw;;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}    
+fieldset, img {
+    border: 0;
+}
+.login .box_login {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.login .inp_text+.inp_text {
+    border-top: 1px solid #ddd;
+}
+
+.inp_text label {
+    visibility: hidden;
+}
+.inp_text input {
+    
+    display: block;
+    width: 90%;
+    height: 20%;
+    font-size: 1.2vw;
+    color: burlywood;
+    border: none;
+    outline: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
+    font-family: 'GmarketSansLight';
+}
+.btn_login {
+    margin: 20px 0 0;
+    width: 100%;
+    height: 48px;
+    border-radius: 3px;
+    font-size: 1.2vw;
+    color: #fff;
+    background-color: burlywood;
+    font-family: 'GmarketSansLight';
+}
+.login_append {
+    overflow: hidden;
+    padding: 15px 0 0;
+}
+.inp_chk {
+    display: inline-block;
+    position: relative;
+    margin-bottom: -1px;
+}
+.login_append .inp_chk {
+    float: left;
+}
+.inp_chk .inp_radio {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 0;
+}
+.inp_chk .lab_g {
+    display: inline-block;
+    margin-right: 19px;
+    color: #909090;
+    font-size: 1.2vw;
+    line-height: 19px;
+    vertical-align: top;
+    font-family: 'GmarketSansLight';
+}
+
+.inp_chk .txt_lab {
+    vertical-align: top;
+}
+.login_append .txt_find {
+    float: right;
+    color: #777;
+    font-family: 'GmarketSansLight';
+}
+
+
+
+
+/**회원가입**/
+
+.con {
+    width: 90%;
+    margin-top: 80px;
+    margin-left: 5%;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+}
+
+.agreement {
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+    float: left;
+    margin-left: 12%;
+    font-family: 'GmarketSansLight';
+    
+}
+.agreement h4 {
+    font-size: 1.2vw;
+    margin-bottom: 20px;
+    text-align: center;
+}
+iframe {
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    background: white;
+    
+}
+
+.agree label {
+    font-size: 1vw;
+}
+
+.sign {
+    position:relative;
+    width: 30%;
+    margin: 0 auto;
+    height: 400px;
+    float: left;
+    text-align: center;
+    margin-left: 7%;
+    font-family: 'GmarketSansLight';
+}
+.sign legend {
+    font-size: 1.2vw;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.sign form {
+
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.sign form input {
+    display: block;
+    width: 100%;
+    height: 20%;
+    font-size: 1.2vw;
+    color: burlywood;
+    border: none;
+    outline: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #fff;
+    box-sizing: border-box;
+    
+}
+.sign form .screen_out {
+    float: left;
+    font-size: 0.9vw;
+    font-weight: bold;
+}
+.sign  > input {
+    width: 100%;
+    height: 60px;
+    border-radius: 3px;
+    font-size: 1.2vw;
+    color: #fff;
+    background-color: burlywood;
+    margin-top: 15px;
+}
+#sign {
+    background-color: burlywood;
+    color: #fff;
+}
+.bthday {
+    font-size: 1.2vw; 
+    padding: 2% 0;
+    
+}
+.birthYear { width: 10%;}
+.birthMonth { width: 10%;}
+.birthDay { width: 10%;}
+
+/**베스트 셀러**/
+.product {
+    margin-top: 50px;
+    width: 70%;
+    height: 1700px;
+}
+.product a {
+    width: 32%;
+    height: 550px;
+    float: left;
+    border: 5px solid oldlace;
+    
+}
+.object1 {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.object2 {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.object3 {
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+
+
+.best {
+    width: 100%;
+    height: 550px;
+    position: relative;
+   
+}
+.best img {
+    width: 100%;
+    height: 450px;
+}
+figcaption {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    background-image: linear-gradient(to bottom right, rgba(200,100,255,0.3), rgba(154,204,255,0.2));
+    top: 0; left: 0;
+    color: #fff; 
+    text-align: center;
+    font-weight: bold;
+    line-height: 450px;
+    opacity: 0;
+    transition: 0.3s;
+    text-shadow: 1px 1px 1px grey;
+}
+.best:hover figcaption {
+    opacity: 1;
+    font-family: 'GmarketSansLight';
+}
+.info {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+    background: antiquewhite;
+    margin-bottom: 10px;
+    font-family: 'GmarketSansLight';
+}
+
+
+.new {
+    width: 100%;
+    height: 550px;
+    position: relative;
+   
+}
+.new img {
+    width: 100%;
+    height: 450px;
+}
+.new:hover figcaption {
+    opacity: 1;
+    font-family: 'GmarketSansLight';
+}
+.name {
+    font-weight: bold;
+    padding: 10px 0 5px 0;
+}
+
+
+/**마이라쥬 스토리**/
+.story {
+    margin-top: 80px;
+    width: 70%;
+    height: 1860px;
+
+}
+#fadescr {
+   width: 100%;
+    height: 100%;
+}
+
+#fadescr > div{
+    width: 100%;
+    height: 400px;
+   
+}
+
+.moon {
+    z-index: 10;
+}
+.moon img{
+    position: relative;
+    width: 40%;
+    float: left;
+    margin-bottom: 70px;
+    z-index: 5;
+}
+.stry1 {
+    width: 35%;
+    position: relative;
+    margin-left: 6%;
+    float: left;
+    margin-top: 50px;
+    font-family: 'GmarketSansLight';
+    z-index: 5;
+   
+}
+.stry1 span{
+    
+    font-family: 'Sarabun', sans-serif;
+    font-size: 1.7vw;
+    font-weight: bold;
+     text-shadow: 1px 1px 5px #d7a35d;
+    line-height: 40px;
+}
+.stry1 p:nth-of-type(1) {
+    font-family: 'GmarketSansLight';
+    font-size: 1vw;
+    margin-top: 20px;
+    text-shadow: 1px 1px 5px #d7a35d;
+    line-height: 25px;
+}
+.stry1 hr {
+    width: 70%;
+    float: left;
+}
+
+.sin{
+    position: relative;
+     margin-top: 50px;
+   
+}
+.sin img:nth-of-type(1) {
+    position: absolute;
+    z-index: 10;
+    width: 300px;
+    right: 0px;
+    bottom: 350px;
+    box-shadow: 0px 1px 5px brown;
+}
+.sin img:nth-of-type(2) {
+    width: 55%;
+    position: absolute;
+    float: right;
+    right: 0px;
+    margin-right: 3%;
+    
+    
+}
+
+
+.bgpaper1 {
+    position: absolute;
+    width: 750px;
+    top: 150px;
+    height: 400px;
+    left: 150px;
+    opacity: 0.5;
+    background: brown;
+    z-index: -1;
+    
+    
+}
+.mood {
+    position: relative;
+     margin-top: 8px;
+}
+
+.text-vertical_1 {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin-left: 0;
+    font-weight: bold;
+    font-size: 3vw;
+    width: 100px;
+    height: 350px;
+    top: -280px; 
+    left: 30px;
+    font-family: 'GmarketSansLight';
+    position: absolute;
+    color: dimgray;
+}
+.text-horizental{
+    background: black;
+    color: white;
+    position: absolute;
+    right: 100px;
+    width: 380px;
+    height: 100px;
+    font-family: 'GmarketSansLight';
+    font-size: 2.2vw;
+    float: right;
+    text-align: center;
+    padding: 10px;
+    top: 30px;
+    
+}
+.talk{
+    position: relative;
+     margin-bottom: 50px;
+    text-align: center;
+    height: 700px;
+    font-weight: bold;
+    z-index: 25;
+   
+}
+
+.talk img:nth-of-type(1){
+    width: 70%;
+    z-index: 10;
+    position: absolute;
+    top: -300px;
+    left: 250px;
+    box-shadow: 1px 1px 5px oldlace;
+}
+.talk img:nth-of-type(2){
+    width: 30%;
+    position: absolute;
+    left: 30px;
+    z-index: 25;
+    box-shadow: 1px 1px 5px grey;
+    top: 0px;
+}
+#fadescr div:nth-of-type(5) {
+    position: relative;
+    text-align: center;
+    top: -200px;
+    height: 300px;
+
+    
+} 
+.bgpaper3 {
+    position: absolute;
+    width: 85%;
+    top: -100px;
+    height: 400px;
+    left: 230px;
+    opacity: 0.7;
+    background: #ff9696;
+    text-align: center;
+    z-index: 10;
+    
+}
+.stry4 {
+    width: 70%;
+    margin-top: 123px;
+    margin-left: 20%;
+     font-family: 'GmarketSansLight';
+    text-shadow: 1px 1px 5px salmon;
+    z-index: 15;
+    font-weight: bold;
+}
+
+
+
+
+/**티룸**/
+.teaintro {
+    margin-top: 50px;
+    width: 90%;
+    height: 800px;
+    text-align: center;
+    position: relative;
+   
+}
+.teaintro img:nth-of-type(1){
+    position: relative;
+    width: 70%;
+}
+.teaintro img:nth-of-type(2){
+    position: absolute;
+    width: 16.4%;
+    left: 230px;
+    top: 330px;
+    
+}
+.decotxt {
+    position: absolute;
+    font-size: 6vw;
+    font-weight: bold;
+    color: white;
+    right: 280px;
+    top: 280px;
+    text-shadow: 3px 3px 1px black;
+}
+.roomtxt {
+    position: relative;
+    width: 60%;
+    height: 300px;
+    text-align: left;
+    margin-left: 35%;
+    font-family: 'GmarketSansLight';
+    margin-top: 120px;
+    text-shadow: 1px 1px 5px sandybrown;
+    line-height: 23px;
+}
+
+
+.tearooms {
+    width: 70%;
+    height: 400px;
+    text-align: center;
+    margin-top: 0px;
+    background: white;
+    padding-top: 80px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px burlywood;
+
+}
+
+.tearooms legend {
+    
+    margin-bottom: 50px;
+    font-size: 2vw;
+     font-family: 'Sarabun', sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px peru;
+    color: dimgrey;
+}
+.salon {
+    height: 140px;
+    width: 14%;
+    float: left;
+    position: relative;
+    background: antiquewhite;
+    border: 5px solid white;
+    padding-top: 30px;
+    font-family: 'Sarabun', sans-serif;
+    border-radius: 13px;
+    font-weight: bold;
+}
+.salon:nth-of-type(1){
+    margin-left: 13%;
+}
+.salon p {
+     font-family: 'Sarabun', sans-serif;
+    font-weight: bold;
+}
+
+/**상품방문**/
+.maridetail {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+
+}
+.maridetail img{
+   width:  60%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.container{
+  width: 70%;
+  margin: 0 auto;
+    margin-top: 40px;
+}
+
+ul.tabs{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+    text-align: center;
+}
+ul.tabs li{
+  background: none;
+  color: #222;
+  display: inline-block;
+  line-height: 50px;
+  cursor: pointer;
+  height: 50px;
+}
+
+ul.tabs li.current{
+  background: antiquewhite;
+  color: #222;
+}
+ul.tabs li {
+    text-align: center;
+    width: 24%;
+    border-radius: 2%;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: #777;
+}
+.tab-content{
+  display: none;
+  border: 10px solid antiquewhite;
+  padding: 15px;
+    height: 1720px;
+    
+}
+
+.tab-content.current{
+  display: inherit;
+}
+
+.ojInfo {
+    margin-top: 30px;
+    width: 100%;
+    background-color: oldlace;
+    height: 1450px;
+    box-shadow: 1px 1px 5px oldlace;
+}
+.ojInfo a {
+    width: 32.4%;
+    height: 480px;
+    float: left;
+    border: 5px solid oldlace;
+    
+}
+
+.mch {
+    width: 100%;
+    height: 480px;
+    position: relative;
+    
+   
+}
+.mch img {
+    width: 100%;
+    height: 380px;
+}
+.figmch {
+    width: 100%;
+    height: 380px;
+    position: absolute;
+     background-image: linear-gradient(to bottom right, rgba(200,100,255,0.3), rgba(154,204,255,0.2));
+    top: 0; left: 0;
+    color: #fff; 
+    text-align: center;
+    line-height: 450px;
+    opacity: 0;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.mch:hover .figmch {
+    opacity: 1;
+    font-family: 'GmarketSansLight';
+}
+
+
+/**제품 상세 페이지**/
+
+.detail {
+    width: 70%;
+    height: 650px;
+    background: antiquewhite;
+    margin-top: 50px;
+}
+
+.detail img {
+    float: left;
+    margin-left: 9%;
+    margin-right: 10%;
+    margin-top: 70px;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 4px solid antiquewhite;
+}
+.dtbox {
+    width: 30%;
+    height: 500px;
+    position: absolute;
+    text-align: center;
+    right: 400px;
+    top: 460px;
+}
+.dtInfo {
+    margin-bottom: 40px;
+     font-family: 'Sarabun', sans-serif;
+}
+.dtxt{
+     font-family: 'GmarketSansLight';
+    font-size: 0.8vw;
+    font-weight: bold;
+}
+.detail button {
+    font-family: 'GmarketSansLight';
+    width: 70%;
+    height: 60px;
+    font-weight: bold;
+    font-size: 1vw;
+    border-radius: 3%;
+    margin-bottom: 10px;
+    background: burlywood;
+    color: white;
+}
+.detail button:hover {
+    background: white;
+    color: burlywood;
+}
+
+
+@media all and (max-width: 768px) {
+    body {
+        margin: 0;
+    }
+    header {
+        width: 100%;
+        height: 235px;
+        margin: 0 auto;
+
+        
+    }
+    .navi {
+        width: 100%;
+        height: 50px;
+        
+    }
+    header .logo pre:nth-of-type(1) {
+        font-size: 18px;
+    }
+    .menu {
+        width: 100%;
+        height: 40px;
+        
+    }
+    .menu a {
+        font-size: 1.2vwx;
+        line-height: 40px;
+        font-weight: bold;
+        
+    }
+    .menu a:hover {
+        color: gray;
+    }
+    .menu a:nth-of-type(1) {
+        font-weight: 500;
+        margin-left: 7%;
+        color: gray;
+    }
+    .menu a:nth-of-type(2) {
+        font-weight: 500;
+        margin-left: 18%;
+        color: gray;
+    }
+    
+    .undermenu {
+    height: 25px;
+    margin-left: 15%;
+    line-height: 40px;
+    position: relative;
+    top: 140px;
+    font-weight: bold;
+}
+
+.undermenu a {
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.undermenu a:first-child {
+    margin-left: 4.5%;
+}
+.undermenu a:nth-child(2) {
+    margin-left: 23%;
+}
+.undermenu a:nth-child(3) {
+    margin-left: 39%;
+}
+.undermenu a:nth-child(4) {
+    margin-left: 55%;
+}
+    
+    .content{
+        width: 90%;
+        height: 620px;
+        margin-top: 30px;
+    }        
+    .txt {
+        position: absolute;
+        top: 270px;
+        width: 100%;
+        margin: 0 ;
+        z-index: 5;
+        text-align: center;
+        height: 350px;
+        
+    }        
+    .txt a {
+        width: 40%;
+    }
+    
+    .title {
+
+    font-size: 4vw;
+        font-weight: bold;
+    
+}
+
+.sub {
+    margin-top: 4px;
+    text-align: center;
+}
+
+.sub p{
+    font-size: 1.2vw;
+    margin-top: 9px;
+    margin-bottom: 5px;
+
+}
+
+.sub span{
+    font-size: 2vw;
+    margin-top: 13px;
+    font-family: 'GmarketSansLight';
+    font-weight: 500;
+    text-align: center;
+}
+
+.content .more{
+    width: 50%;
+    height: 48px;
+    border-radius: 3px;
+    font-size: 1vw;
+
+}
+
+.content img {
+   position: absolute;
+        top: 0;
+        width: 100%;
+    
+        margin: 0 ;
+    z-index: 3;
+    box-shadow: 5px 5px 30px #d7a35d;
+        }
+    
+    hr {
+    width: 90%;
+}
+
+footer {
+    z-index: 10;
+    width: 100%;
+    height: 250px;
+    position: relative;
+
+    
+}
+
+
+.foot {
+    text-align: center;
+    width: 100%;
+}
+
+    .foot span {
+        width: 80%;
+    }
+
+    .btlogo {
+      position: absolute;
+        width: 50px;
+        height: 50px;
+        top: -65px;
+
+        left: 130px;
+
+    }
+    .foot img {
+   width: 50px;
+        height: 50px;
+        
+}
+           
+            
+            .copyright {
+                width: 80%;
+                font-size: 9px;
+                margin: 0;
+            }
+    .login {
+    position: absolute;
+        top: 270px;
+        width: 100%;
+        margin: 0 ;
+        font-size: 16px;
+        height: 300px;
+    
+}
+    .login legend {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .txt_find {
+        font-size: 12px;
+    }
+            
+    .inp_text   {
+        font-size: 13px;
+    }
+        }
+

@@ -1,0 +1,99 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariage freres </title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/titlelogo.jpg">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <nav class="navi">
+                <ul class="menu">
+                    <li>
+                        
+                        <a href="login.html">Login</a>
+                        <a href="sign.html">Sign</a>
+                        <!--로그인 세션시 보이기-->
+                        <a href="mypage.php">MyHome</a>
+
+                    </li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <a href="index.html">
+                    <pre>M     a     r     i     a     g     e            F     r     é     r     e     s</pre>
+                    <pre>P a r i s    -    1 8 5 4</pre>
+                </a> 
+            </div>
+            <hr>
+            <div class="undermenu">
+                <ul>
+                    <li>
+                        <a href="story.html">Mariage Story</a>
+                        <a href="tearoom.html">Tea Room</a>
+                        <a href="best.html">Best Seller</a>
+                        <a href="new.html">New Arrivals</a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+        </header>
+        <div class="content">
+            <div class="login">
+                <form name="login" method="post" id="login_f" action="php/member/login.php">
+                        <fieldset>
+                            <legend>로그인폼</legend>
+                            <div class="box_login">
+                                <div class="inp_text">
+                                    <label for="loginId" class="screen_out">아이디</label>
+                                    <input type="text" name="id" placeholder="아이디">
+                                </div>
+                                <div class="inp_text">
+                                    <label for="loginPw" class="screen_out">비밀번호</label>
+                                    <input type="password" name="pass" placeholder="비밀번호">
+                                </div>
+                            </div>
+                            <button class="btn_login" type="button" onclick="check_input()">로그인</button>
+                            <div class="login_append">
+                                <span class="txt_find">
+                                    <a href="#" class="link_find">아이디</a>
+                                            / 
+                                    <a href="#" class="link_find">비밀번호 찾기</a>
+                                </span>
+                            </div> 
+                        </fieldset>
+                    </form>
+                
+            </div>
+            <div class="image">
+                <img src="imgs/tea.jpg">
+            </div>
+
+        </div>
+        <footer>
+                <hr>
+                <div class="foot">
+                    <div class="btlogo">
+                        <img src="imgs/btlogo.png" alt="btlogo">
+                    </div>
+                    <div class="copyright">
+                        <span>
+                            <a href="#">INFO &amp; CONTACT</a> | Tel : +33(0)143471854 | Mail : info@mariagefreres.com <br>  
+                            Address : 30 rue du Bourg-Tibourg Paris 4e | 사업자등록번호 : 123-12-34567 <br> 
+                            통신판매업 신고번호 : 제2022-부산진구-0000호 | 개인정보 책임관리자 : 조지현 | Email : csgy114@gmail.com <br>
+
+                        </span>
+                        <span>
+                            Copyright © All right reserved.
+                        </span>
+                    </div>
+                </div>
+            </footer>
+    </div>
+
+</body></html>

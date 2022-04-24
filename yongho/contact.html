@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(85,75,85);
+  background : linear-gradient(to right, rgb(255, 208, 227), rgba(255, 255, 201, 0.867))
+}
+a {
+  text-decoration: none;
+  color: rgb(54, 56, 55);
+}
+h1 {
+  margin-top: 180px;
+  padding: 50px 0;
+  font-size: 45px;
+  text-align: center;
+  color: rgb(54, 56, 55);
+}
+:active, :hover, :focus {
+  outline: 0!important;
+  outline-offset: 0;
+}
+::before,
+::after {
+  position: absolute;
+  content: "";
+}
+
+.btn-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 10px auto 35px;
+  
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  width: auto; height: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0px 25px 15px;
+  min-width: 150px;
+  
+}
+  .btn span {         
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    transition: 0.3s;
+
+  }
+
+/*--- btn-1 ---*/
+.btn-1::before {
+  background-color: rgb(28, 31, 30);
+  transition: 0.3s ease-out;
+}
+.btn-1 span {
+  color: rgb(255,255,255);
+  border: 1px solid rgb(28, 31, 30);
+  transition: 0.2s 0.1s;
+}
+.btn-1 span:hover {
+  color: rgb(28, 31, 30);
+  transition: 0.2s 0.1s;
+}
+
+/* 1.hover-filled-slide-down */
+.btn.hover-filled-slide-down::before {
+  bottom: 0; left: 0; right: 0; 
+  height: 100%; width: 100%;
+}
+.btn.hover-filled-slide-down:hover::before {
+  height: 0%;
+}
+
+/* 2.hover-filled-slide-up */
+.btn.hover-filled-slide-up::before {
+  top: 0; left: 0; right: 0;
+  height: 100%; width: 100%;
+}
+.btn.hover-filled-slide-up:hover::before {
+  height: 0%;
+}
+
+/* 3.hover-filled-slide-left */
+.btn.hover-filled-slide-left::before {
+  top: 0; bottom: 0; left: 0;
+  height: 100%; width: 100%;
+}
+.btn.hover-filled-slide-left:hover::before {
+  width: 0%;
+}
+
+/* 4. hover-filled-slide-right */
+.btn.hover-filled-slide-right::before {
+  top:0; bottom: 0; right: 0;
+  height: 100%; width: 100%;
+}
+.btn.hover-filled-slide-right:hover::before {
+  width: 0%;
+}
+
+/* 5. hover-filled-opacity */
+.btn.hover-filled-opacity::before {
+  top:0; bottom: 0; right: 0;
+  height: 100%; width: 100%;
+  opacity: 1;
+}
+.btn.hover-filled-opacity:hover::before {
+  opacity: 0;
+}
+
+/*--- btn-2 ---*/
+.btn-2::before {
+  background-color: rgb(28, 31, 30);
+  transition: 0.3s ease-out;
+}
+.btn-2 span {
+  color: rgb(28, 31, 30);
+  border: 1px solid rgb(28, 31, 30);
+  transition: 0.2s;
+}  
+.btn-2 span:hover {
+  color: rgb(255,255,255);
+  transition: 0.2s 0.1s;
+}
+
+
+
+/* 15. hover-border-5 */
+.btn.hover-border-5::before,
+.btn.hover-border-5::after {
+  width: 0%; height: 0%;
+  opacity: 0;
+}
+.btn.hover-border-5::before {
+  top: 0; right: 0;
+  border-top: 1px solid rgb(28, 31, 30);
+  border-left: 1px solid rgb(28, 31, 30);
+  transition: width 0.2s 0.5s ease-out, height 0.15s 0.35s linear, opacity 0s 0.7s;
+}
+.btn.hover-border-5::after {
+  bottom: 0; left: 0px;
+  border-bottom: 1px solid rgb(28, 31, 30);
+  border-right: 1px solid rgb(28, 31, 30);
+  transition: width 0.2s 0.15s linear, height 0.15s ease-in, opacity 0s 0.35s;
+}
+.btn.hover-border-5:hover::before,
+.btn.hover-border-5:hover::after {
+  width: 100%; height: 96%;
+  opacity: 1;
+}
+.btn.hover-border-5:hover::before {
+  transition: width 0.2s ease-in, height 0.15s 0.2s linear, opacity 0s;   /* 1,2 */
+}
+.btn.hover-border-5:hover::after {
+  transition: width 0.2s 0.35s linear, height 0.15s 0.5s ease-out, opacity 0s 0.3s; 
+} 
+
+/*--- btn-4 ---*/
+.btn-4 span {
+  color: rgb(28, 31, 30);
+  background-color: rgb(245,245,245);
+}
+.btn-4 span:hover {
+  color: rgb(54, 56, 55);
+}
+.btn-4::before,
+.btn-4::after {
+  width: 15%; height: 2px;
+  background-color: rgb(54, 56, 55);
+  z-index: 2;
+}
+
+
+    </style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>Lapain Project</h1>
+
+<div class='btn-holder'>
+  
+  <div class="btn btn-3 hover-border-5">
+    <span>Member : ChoCho & Net<br><br>
+      <a href="https://www.instagram.com/la_pain_project/" target="_blank" >Insta : la_pain_project</a><br><br>
+      <a href="mailto:lapain.project@gmail.com">E-mail : lapain.project@gmail.com </a><br>
+    </span>
+  </div>
+</div>
+
+<!-- partial -->
+  
+</body>
+</html>

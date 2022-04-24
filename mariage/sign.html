@@ -1,0 +1,126 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mariage freres </title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="imgs/titlelogo.jpg">
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <header>
+                <nav class="navi">
+                    <ul class="menu">
+                        <li>
+
+                            <a href="login.html">Login</a>
+                            <a href="sign.html">Sign</a>
+                            <!--로그인 세션시 보이기-->
+                            <a href="mypage.php">MyHome</a>
+
+                        </li>
+                    </ul>
+                </nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <pre>M     a     r     i     a     g     e            F     r     é     r     e     s</pre>
+                        <pre>P a r i s    -    1 8 5 4</pre>
+                    </a> 
+                </div>
+                <hr>
+                <div class="undermenu">
+                    <ul>
+                        <li>
+                            <a href="story.html">Mariage Story</a>
+                            <a href="tearoom.html">Tea Room</a>
+                            <a href="best.html">Best Seller</a>
+                            <a href="new.html">New Arrivals</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+            </header>
+            <div class="con">
+                <div class="agreement">    
+                    <div class="agree">
+                        <h4>서비스 이용 약관</h4>
+                        <iframe src="agree.txt" height="480" scroll="auto" >
+                        </iframe>
+                        <p>
+                            <input type="checkbox" id="chk_1" class="cb">
+                            <label for="chk_1">동의함(필수)</label>
+                        </p>
+                    </div>
+                </div>
+                <div class="sign">
+                    <legend>회원 가입</legend>
+                    <form name="memberInsert" method="post" action="memberInsertProcess.php"
+                          onsubmit="return chk_input();">
+                        <label for="loginId" class="screen_out">이메일</label>
+                        <input type="email" name="userEmail" placeholder="이메일" required>
+                        <br>
+                        <label for="loginId" class="screen_out">닉네임</label>
+                        <input type="text" name="userNickname" placeholder="닉네임" required>
+                        
+                        <br>
+                        <label for="loginId" class="screen_out">비밀번호</label>
+                        <input type="password" name="userPassword" placeholder="비밀번호" required>
+                        <br>
+                        <div class="bthday">
+                        생일: 
+                        <select name="birthYear" required>
+                        <?php
+                            $thisYear = Date("Y", time());
+                            for($i = 1940; $i <= $thisYear; $i++) {
+                                echo "<option value='{$i}'>{$i}</option>";
+                            }
+                        ?>
+                        </select>년
+                        <select name="birthMonth" required>
+                        <?php
+                            for($i = 1; $i <= 12; $i++) {
+                                echo "<option value='{$i}'>{$i}</option>";
+                            }
+                        ?>
+                        </select>월
+                        <select name="birthDay" required>
+                        <?php
+                            for($i = 1; $i <= 31; $i++) {
+                                echo "<option value='{$i}'>{$i}</option>";
+                            }
+                        ?>
+                        </select>일
+                        <br>
+                        </div>
+                        <input id="sign" type="submit" value="회원가입">
+                    </form>
+                    
+                </div>
+            </div>
+            <footer>
+                <hr>
+                <div class="foot">
+                    <div class="btlogo">
+                        <img src="imgs/btlogo.png" alt="btlogo">
+                    </div>
+                    <div class="copyright">
+                        <span>
+                            <a href="#">INFO &amp; CONTACT</a> | Tel : +33(0)143471854 | Mail : info@mariagefreres.com <br>  
+                            Address : 30 rue du Bourg-Tibourg Paris 4e | 사업자등록번호 : 123-12-34567 <br> 
+                            통신판매업 신고번호 : 제2022-부산진구-0000호 | 개인정보 책임관리자 : 조지현 | Email : csgy114@gmail.com <br>
+
+                        </span>
+                        <span>
+                            Copyright © All right reserved.
+                        </span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </body>
+</html>
